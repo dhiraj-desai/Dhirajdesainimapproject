@@ -1,11 +1,7 @@
-# UserClientProjectMain
-User Client Project
+# UserClientProject
 
 
-
-## 3] Users with username,password and tokens 
-dhiraj
-
+## 1] Users with username and tokens 
 dhiraj
 
 b76ff47569b86e1e67619bbe6ba6e303dfdd0315
@@ -13,34 +9,26 @@ b76ff47569b86e1e67619bbe6ba6e303dfdd0315
 
 ramesh
 
-rames@123
-
 71fbf448663f869d2d95444db216a5d45cbc60c1
 
 
 mangesh
-
-ngesh@123
 
 7a120fb216e9fb3b3641406949b884582378096d
 
 
 soham
 
-oham@123
-
 80b0280564aaada4b6da845f41edd1df6dabd578
 
 
 chintu
 
-hintu@123
-
 966b71135031bb8994d43a731e653a46bad7e484
 
 
 
-## 4] Test APIs in postman
+## 2] you need to Test APIs in postman
 #### Pass Token in headers
 
 Key : Authorization 
@@ -67,7 +55,7 @@ GET request - https://clientuserprojectsapp.onrender.com/clients/
 
 
 #### iii. Specific Client
-GET request - https://clientuserprojectsapp.onrender.com/clients/4
+GET request - https://clientuserprojectsapp.onrender.com/clients/3
 
 
 #### iv. Create Project
@@ -79,7 +67,7 @@ Input:
 
 {
 
-    "project_name": "Project Test",
+    "project_name": "Project Test2",
     
     "users": [
     
