@@ -53,16 +53,12 @@ def create_project_for_client(request, client_id):
     # Retrieve the client by ID
     client = get_object_or_404(Client, pk=client_id)
 
-    # Get the project name from the request data
     project_name = request.data.get("project_name")
 
-    # Retrieve user IDs from the request data
     user_ids = [user["id"] for user in request.data.get("users", [])]
 
-    # Get users with the specified IDs
     users = User.objects.filter(id__in=user_ids)
 
-    # Create the project instance
     project = Project.objects.create(
         project_name=project_name, client=client, created_by=request.user
     )
@@ -71,7 +67,6 @@ def create_project_for_client(request, client_id):
     project.users.set(users)
     project.save()
 
-    # Serialize the project instance and return the response
     serializer = ProjectSerializer(project)
     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -85,4 +80,3 @@ def user_assigned_projects(request):
     return Response(serializer.data)
 
 
-# Create your views here.
