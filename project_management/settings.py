@@ -63,7 +63,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this line
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 ROOT_URLCONF = "project_management.urls"
